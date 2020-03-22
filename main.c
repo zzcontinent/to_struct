@@ -14,6 +14,7 @@ typedef  struct{
 
 void main()
 {
+	printf("%d\n",sizeof(__test));
 	printf("%d\n",offsetof(__test, c));
 	__test test1 = {1,1,"123"};
 	printf("%d\n",to_struct(&test1.c, __test, c));
